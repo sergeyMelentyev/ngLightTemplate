@@ -1,0 +1,227 @@
+/**
+ * Eric Meyer's Reset CSS v2.0 
+(http://meyerweb.com/
+eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.videoBackGround{
+	position: fixed;
+	z-index: -9;
+	width: 100%;
+	height: 100vh;
+	background-color: grey;
+}
+#bgvid{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	background: url(img/.jpg) no-repeat;
+	background-size: cover;
+}
+.appWrapper{
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+    -ms-transform: scale(0.9,0.9);
+    -webkit-transform: scale(0.9,0.9);
+    transform: scale(0.9,0.9);
+}
+.mainBackGroundWrapper{
+	font-family: 'Poiret One', cursive;
+	font-weight: bolder;
+	text-shadow: 0px 0px 10px #000, 0px 0px 10px #ECECEC;
+	background: linear-gradient(227deg, #52edc7, #5ac8fb, #c643fc);
+	background-size: 600% 600%;
+	-webkit-animation: AnimationName 15s ease infinite;
+	-moz-animation: AnimationName 15s ease infinite;
+	-o-animation: AnimationName 15s ease infinite;
+	animation: AnimationName 15s ease infinite;
+}
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 99%}
+    50%{background-position:100% 2%}
+    100%{background-position:0% 99%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 99%}
+    50%{background-position:100% 2%}
+    100%{background-position:0% 99%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 99%}
+    50%{background-position:100% 2%}
+    100%{background-position:0% 99%}
+}
+@keyframes AnimationName { 
+    0%{background-position:0% 99%}
+    50%{background-position:100% 2%}
+    100%{background-position:0% 99%}
+}
+
+.wrapper{
+	position: relative;
+	min-width: 1250px;
+	max-width: 1500px;
+	height: 100vh;
+	margin: 0 auto;
+}
+	.upperLeftTheme{
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 50%;
+		height: 50%;
+	}
+	.upperLeftElem{
+		position: absolute;
+		opacity: 0;
+		top: 0px;
+		left: 0px;
+		margin: 0px auto;
+		width: 60%;
+	}
+		.upperRightTheme{
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			width: 50%;
+			height: 50%;
+		}
+		.upperRightElem{
+			position: absolute;
+			opacity: 0;
+			top: 0px;
+			right: 0px;
+			margin: 0px auto;
+			width: 60%;
+		}
+				.lowerLeftTheme{
+					position: absolute;
+					bottom: 0px;
+					left: 0px;
+					width: 50%;
+					height: 50%;
+				}
+				.lowerLeftElem{
+					position: absolute;
+					opacity: 0;
+					bottom: 0px;
+					left: 0px;
+					margin: 0px auto;
+					width: 60%;
+				}
+						.lowerRightTheme{
+							position: absolute;
+							bottom: 0px;
+							right: 0px;
+							width: 50%;
+							height: 50%;						
+						}
+						.lowerRightElem{
+							position: absolute;
+							opacity: 0;
+							bottom: 0px;
+							right: 0px;
+							margin: 0px auto;
+							width: 60%;
+						}
+
+
+.centerTextArea{
+	opacity: 0;
+	position: absolute;
+	z-index: 9;
+	width: 50%;
+	height: 200px;
+	margin: auto;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	text-align: center;
+	line-height: 30px;
+}
+h1{
+	margin: 25px 0px;
+	font-size: 30px;
+}
+h2{
+	font-size: 22px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
