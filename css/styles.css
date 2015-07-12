@@ -31,6 +31,9 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	font-family: 'Poiret One', cursive;
+	color: #5A5A5A;
+	font-weight: bolder;
 }
 ol, ul {
 	list-style: none;
@@ -47,12 +50,49 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+a{
+	text-decoration: none;
+	color: inherit;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+a:hover{
+	text-shadow: 0px 0px 10px #F7F7F7, 0px 0px 10px #F7F7F7;
+}
+p{
+	font-size: 16px;
+
+}
 .videoBackGround{
 	position: fixed;
 	z-index: -9;
 	width: 100%;
 	height: 100vh;
-	background-color: grey;
+}
+.message{
+	position: fixed;
+	width: 650px;
+	height: 200px;
+	background-color: rgba(235,235,235,0.9);
+	margin: auto;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	z-index: -9;
+	text-align: center;
+	line-height: 25px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 0px 0px 10px 2px rgba(255,255,255,1);
+	-moz-box-shadow: 0px 0px 10px 2px rgba(255,255,255,1);
+	box-shadow: 0px 0px 10px 2px rgba(255,255,255,1);
+}
+.message p:first-child{
+	font-size: 30px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 #bgvid{
 	position: fixed;
@@ -65,21 +105,16 @@ table {
 	z-index: -100;
 	-webkit-transform: translateX(-50%) translateY(-50%);
 	transform: translateX(-50%) translateY(-50%);
-	background: url(img/.jpg) no-repeat;
+	background: url(../img/bgCode.jpg) no-repeat;
 	background-size: cover;
 }
 .appWrapper{
 	position: absolute;
 	width: 100%;
 	height: 100vh;
-    -ms-transform: scale(0.9,0.9);
-    -webkit-transform: scale(0.9,0.9);
-    transform: scale(0.9,0.9);
 }
 .mainBackGroundWrapper{
-	font-family: 'Poiret One', cursive;
-	font-weight: bolder;
-	text-shadow: 0px 0px 10px #000, 0px 0px 10px #ECECEC;
+	text-shadow: 0px 0px 10px #000, 0px 0px 15px #F7F7F7;
 	background: linear-gradient(227deg, #52edc7, #5ac8fb, #c643fc);
 	background-size: 600% 600%;
 	-webkit-animation: AnimationName 15s ease infinite;
@@ -130,6 +165,22 @@ table {
 		margin: 0px auto;
 		width: 60%;
 	}
+	.upperLeftElemHidden{
+		position: absolute;
+		opacity: 0;
+		top: 0px;
+		left: 0px;
+		margin: 0px auto;
+		width: 60%;
+	}
+	.upperLeftThemeHidden{
+		position: absolute;
+		z-index: 9;
+		top: 0px;
+		left: 0px;
+		width: 50%;
+		height: 50%;
+	}
 		.upperRightTheme{
 			position: absolute;
 			top: 0px;
@@ -138,6 +189,21 @@ table {
 			height: 50%;
 		}
 		.upperRightElem{
+			position: absolute;
+			opacity: 0;
+			top: 0px;
+			right: 0px;
+			margin: 0px auto;
+			width: 60%;
+		}
+		.upperRightThemeHidden{
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			width: 50%;
+			height: 50%;
+		}
+		.upperRightElemHidden{
 			position: absolute;
 			opacity: 0;
 			top: 0px;
@@ -160,6 +226,21 @@ table {
 					margin: 0px auto;
 					width: 60%;
 				}
+				.lowerLeftThemeHidden{
+					position: absolute;
+					bottom: 0px;
+					left: 0px;
+					width: 50%;
+					height: 50%;
+				}
+				.lowerLeftElemHidden{
+					position: absolute;
+					opacity: 0;
+					bottom: 0px;
+					left: 0px;
+					margin: 0px auto;
+					width: 60%;
+				}
 						.lowerRightTheme{
 							position: absolute;
 							bottom: 0px;
@@ -175,7 +256,21 @@ table {
 							margin: 0px auto;
 							width: 60%;
 						}
-
+						.lowerRightThemeHidden{
+							position: absolute;
+							bottom: 0px;
+							right: 0px;
+							width: 50%;
+							height: 50%;
+						}
+						.lowerRightElemHidden{
+							position: absolute;
+							opacity: 0;
+							bottom: 0px;
+							right: 0px;
+							margin: 0px auto;
+							width: 60%;
+						}
 
 .centerTextArea{
 	opacity: 0;
@@ -198,7 +293,16 @@ h1{
 h2{
 	font-size: 22px;
 }
+.centerLevelText{
+	text-shadow: 0px 0px 10px #000, 0px 0px 15px #F7F7F7;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
 
+.centerLevelText:hover{
+	cursor: pointer;
+	text-shadow: 0px 0px 10px #F7F7F7, 0px 0px 10px #F7F7F7;
+}
 
 
 

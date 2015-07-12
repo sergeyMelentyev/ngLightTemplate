@@ -7,9 +7,11 @@ var upperLeftElem = $('.upperLeftElem');
 var upperRightElem = $('.upperRightElem');
 var lowerLeftElem = $('.lowerLeftElem');
 var lowerRightElem = $('.lowerRightElem');
-
-
-
+var appWrapper = $('.appWrapper');
+var upperLeftElemHidden = $('.upperLeftElemHidden');
+var upperRightElemHidden = $('.upperRightElemHidden');
+var lowerLeftElemHidden = $('.lowerLeftElemHidden');
+var lowerRightElemHidden = $('.lowerRightElemHidden');
 
 var starAnimationPosition = function(){
 	upperLevelText.transition({
@@ -60,30 +62,62 @@ setTimeout(function(){
 }, 3000);
 
 
-setTimeout(function(){
-
-}, 3000);
-
 new Vivus('upperLeftSvg', {
     type: 'async',
-    duration: 500,
+    duration: 250,
     animTimingFunction: Vivus.EASE
 });
 new Vivus('upperRightSvg', {
     type: 'async',
-    duration: 500,
+    duration: 250,
     animTimingFunction: Vivus.EASE
 });
 new Vivus('lowerLeftSvg', {
     type: 'delayed',
-    duration: 650,
+    duration: 300,
     animTimingFunction: Vivus.LINEAR
 });
 new Vivus('lowerRightSvg', {
     type: 'delayed',
-    duration: 650,
+    duration: 300,
     animTimingFunction: Vivus.LINEAR
 });
+setTimeout(function(){
+	upperLeftElemHidden.transition({
+		opacity: 100
+	},1000,'cubic-bezier(0,0,0,.69)');
+	upperRightElemHidden.transition({
+		opacity: 100
+	},1000,'cubic-bezier(0,0,0,.69)');
+	lowerLeftElemHidden.transition({
+		opacity: 100
+	},1000,'cubic-bezier(0,0,0,.69)');
+	lowerRightElemHidden.transition({
+		opacity: 100
+	},1000,'cubic-bezier(0,0,0,.69)');
+}, 7000);
+
+
+
+$('.centerLevelText').click(function(){
+	appWrapper.transition({
+		scale: 0.9, 
+		perspective: '1000px',
+		rotateY: '-5deg'
+	},350,'cubic-bezier(0,0,0,.69)');
+	setTimeout(function(){
+	appWrapper.transition({
+		x: 500,
+		opacity: 0
+		},500,'cubic-bezier(0,0,0,.69)');
+	}, 350);
+	setTimeout(function(){
+		appWrapper.fadeOut();
+	}, 450);
+});
+
+
+
 
 
 
