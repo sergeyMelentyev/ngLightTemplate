@@ -31,9 +31,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-	font-family: 'Poiret One', cursive;
+	font-family: 'Open Sans Condensed', sans-serif;
 	color: #5A5A5A;
-	font-weight: bolder;
 }
 ol, ul {
 	list-style: none;
@@ -72,9 +71,10 @@ p{
 .message{
 	position: fixed;
 	width: 650px;
-	height: 200px;
+	height: 160px;
 	background-color: rgba(235,235,235,0.9);
 	margin: auto;
+	padding: 10px;
 	top: 0px;
 	left: 0px;
 	bottom: 0px;
@@ -163,7 +163,7 @@ p{
 		top: 0px;
 		left: 0px;
 		margin: 0px auto;
-		width: 60%;
+		width: 50%;
 	}
 	.upperLeftElemHidden{
 		position: absolute;
@@ -171,7 +171,7 @@ p{
 		top: 0px;
 		left: 0px;
 		margin: 0px auto;
-		width: 60%;
+		width: 50%;
 	}
 	.upperLeftThemeHidden{
 		position: absolute;
@@ -194,7 +194,7 @@ p{
 			top: 0px;
 			right: 0px;
 			margin: 0px auto;
-			width: 60%;
+			width: 50%;
 		}
 		.upperRightThemeHidden{
 			position: absolute;
@@ -209,7 +209,7 @@ p{
 			top: 0px;
 			right: 0px;
 			margin: 0px auto;
-			width: 60%;
+			width: 50%;
 		}
 				.lowerLeftTheme{
 					position: absolute;
@@ -224,7 +224,7 @@ p{
 					bottom: 0px;
 					left: 0px;
 					margin: 0px auto;
-					width: 60%;
+					width: 50%;
 				}
 				.lowerLeftThemeHidden{
 					position: absolute;
@@ -239,7 +239,7 @@ p{
 					bottom: 0px;
 					left: 0px;
 					margin: 0px auto;
-					width: 60%;
+					width: 50%;
 				}
 						.lowerRightTheme{
 							position: absolute;
@@ -254,7 +254,7 @@ p{
 							bottom: 0px;
 							right: 0px;
 							margin: 0px auto;
-							width: 60%;
+							width: 50%;
 						}
 						.lowerRightThemeHidden{
 							position: absolute;
@@ -269,7 +269,7 @@ p{
 							bottom: 0px;
 							right: 0px;
 							margin: 0px auto;
-							width: 60%;
+							width: 50%;
 						}
 
 .centerTextArea{
