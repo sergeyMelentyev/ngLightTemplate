@@ -163,7 +163,7 @@ p{
 		top: 0px;
 		left: 0px;
 		margin: 0px auto;
-		width: 50%;
+		width: 65%;
 	}
 	.upperLeftElemHidden{
 		position: absolute;
@@ -171,7 +171,7 @@ p{
 		top: 0px;
 		left: 0px;
 		margin: 0px auto;
-		width: 50%;
+		width: 65%;
 	}
 	.upperLeftThemeHidden{
 		position: absolute;
@@ -194,7 +194,7 @@ p{
 			top: 0px;
 			right: 0px;
 			margin: 0px auto;
-			width: 50%;
+			width: 65%;
 		}
 		.upperRightThemeHidden{
 			position: absolute;
@@ -209,7 +209,7 @@ p{
 			top: 0px;
 			right: 0px;
 			margin: 0px auto;
-			width: 50%;
+			width: 65%;
 		}
 				.lowerLeftTheme{
 					position: absolute;
@@ -224,7 +224,7 @@ p{
 					bottom: 0px;
 					left: 0px;
 					margin: 0px auto;
-					width: 50%;
+					width: 65%;
 				}
 				.lowerLeftThemeHidden{
 					position: absolute;
@@ -239,7 +239,7 @@ p{
 					bottom: 0px;
 					left: 0px;
 					margin: 0px auto;
-					width: 50%;
+					width: 65%;
 				}
 						.lowerRightTheme{
 							position: absolute;
@@ -254,7 +254,7 @@ p{
 							bottom: 0px;
 							right: 0px;
 							margin: 0px auto;
-							width: 50%;
+							width: 65%;
 						}
 						.lowerRightThemeHidden{
 							position: absolute;
@@ -269,7 +269,7 @@ p{
 							bottom: 0px;
 							right: 0px;
 							margin: 0px auto;
-							width: 50%;
+							width: 65%;
 						}
 
 .centerTextArea{
@@ -307,25 +307,42 @@ h2{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media screen and (max-width: 1025px) {
+	.message, video, .upperLeftTheme, .upperLeftThemeHidden, .upperRightTheme, .upperRightThemeHidden, .centerTextArea, .lowerLeftTheme, .lowerLeftThemeHidden, .lowerRightTheme, .lowerRightThemeHidden{
+		 display: none;
+    }
+    .smallDevices{
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		bottom: 0px;
+		left: 0px;
+		margin: auto;
+		width: 300px;
+		height: 200px;
+		text-align: center;
+    	overflow: hidden;
+    	padding: 10px;
+		background-color: rgba(235,235,235,0.7);
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+	box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.3);
+		-webkit-box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.3);
+		-moz-box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.3);
+    }
+    .smallDevices h3{
+    	font-size: 1em;
+    	line-height: 1.2em;
+    	position: relative;
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+    }
+}
+@media screen and (min-width: 1025px) {
+	.smallDevices{
+		 display: none;
+    }
+}
