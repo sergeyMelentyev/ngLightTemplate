@@ -118,7 +118,6 @@ p{
 
 .wrapper{
 	position: relative;
-	min-width: 1250px;
 	max-width: 1500px;
 	height: 100vh;
 	margin: 0 auto;
@@ -126,7 +125,7 @@ p{
 .centerTextArea{
 	position: absolute;
 	z-index: 9;
-	width: 50%;
+	width: 60%;
 	height: 300px;
 	margin: auto;
 	top: 0px;
@@ -140,7 +139,6 @@ h1{
 	cursor: pointer;
 	margin: 55px 0px;
 	font-size: 100px;
-	font-weight: 700;
 	text-shadow: 0px 0px 10px #000, 0px 0px 15px #F7F7F7;
 }
 h2{
@@ -171,7 +169,7 @@ canvas{
 
 
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1020px) {
 	.message, video, .upperLeftTheme, .upperLeftThemeHidden, .upperRightTheme, .upperRightThemeHidden, .centerTextArea, .lowerLeftTheme, .lowerLeftThemeHidden, .lowerRightTheme, .lowerRightThemeHidden{
 		 display: none;
     }
@@ -205,7 +203,7 @@ canvas{
 		transform: translateY(-50%);
     }
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1021px) {
 	.smallDevices{
 		 display: none;
     }
