@@ -5,39 +5,6 @@ var centerTextArea = $('.centerTextArea'),
 	lowerLevelText = $('.lowerLevelText'),
 	appWrapper = $('.appWrapper');
 
-var starAnimationPosition = function(){
-	upperLevelText.transition({
-		x: -20,
-		opacity: 0
-	});
-	centerLevelText.transition({
-		x: 0,
-		opacity: 0
-	});
-	lowerLevelText.transition({
-		x: 20,
-		opacity: 0
-	});
-};
-
-starAnimationPosition();
-
-setTimeout(function(){
-	centerTextArea.css({'opacity': 100});
-	upperLevelText.transition({
-		x: 0,
-		opacity: 100
-	},5000,'cubic-bezier(0,0,0,.69)');
-	centerLevelText.transition({
-		x: 0,
-		opacity: 100
-	},5000,'cubic-bezier(0,0,0,.69)');
-	lowerLevelText.transition({
-		x: 0,
-		opacity: 100
-	},5000,'cubic-bezier(0,0,0,.69)');
-}, 1000);
-
 $('.centerLevelText').click(function(){
 	appWrapper.transition({
 		scale: 0.9, 
@@ -54,16 +21,3 @@ $('.centerLevelText').click(function(){
 		appWrapper.fadeOut();
 	}, 450);
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
