@@ -1,4 +1,5 @@
 "use strict";
+var removeLoader = document.getElementById("removeLoader");
 var centerTextArea = $('.centerTextArea'),
 	upperLevelText = $('.upperLevelText'),
 	centerLevelText = $('.centerLevelText'),
@@ -12,12 +13,15 @@ $('.centerLevelText').click(function(){
 		rotateY: '-5deg'
 	},350,'cubic-bezier(0,0,0,.69)');
 	setTimeout(function(){
-	appWrapper.transition({
-		x: 500,
-		opacity: 0
-		},500,'cubic-bezier(0,0,0,.69)');
+		appWrapper.transition({
+			x: 500,
+			opacity: 0
+			},500,'cubic-bezier(0,0,0,.69)');
+		appWrapper.fadeOut(350);
 	}, 350);
 	setTimeout(function(){
-		appWrapper.fadeOut();
-	}, 450);
+		if (removeLoader.parentNode) {
+			removeLoader.parentNode.removeChild(removeLoader);
+		}
+	}, 1000);
 });
