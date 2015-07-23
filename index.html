@@ -1,7 +1,6 @@
 <!doctype html>
 <html>
 <head>
-
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Apple Care</title>
@@ -19,18 +18,17 @@
 	<div class='smallDevices'>
 		<h3>Мобильная версия вэб приложения деактивирована на данном этапе сборки. <br> Пожалуйста, запустите приложение с иной системы (с шириной экрана более 1025 пикселей). <br> Приносим свои извинения за предоставленные неудобства.</h3>
 	</div>
-
-
 <div class="videoBackGround">
 	<div class='message'>
 		<p>Приложение находится в стадии разработки.</p>
 		<p>Для его сборки используются: <a href="http://angularjs.org" target="_empty">Angular.js</a>, <a href="http://d3js.org" target="_empty">D3.js</a>, <a href="http://www.w3schools.com/html/html5_video.asp" target="_empty">HTML5 Video</a>, CSS3, Vanila JavaScript и dynamic SVG.</p>
-		<p>Первичный код опубликован на <a href="http://github.com/sergeyMelentyev/ngLightTemplate" target="_empty">GitHub</a> в свободном доступе (under <a href="http://opensource.org/licenses/MIT" target="_empty">The MIT License</a>) и будет постепенно обновляться до финальной версии. Вы можете использовать его как шаблонное решиен для своих проектов.</p></div>
+		<p>Первичный код опубликован на <a href="http://github.com/sergeyMelentyev/ngLightTemplate" target="_empty">GitHub</a> в свободном доступе (under <a href="http://opensource.org/licenses/MIT" target="_empty">The MIT License</a>) и будет постепенно обновляться до финальной версии. Вы можете использовать его как шаблонное решиен для своих проектов.</p>
+	</div>
 	<video autoplay loop poster="img/bgCode.jpg" id="bgvid">
 		<source src="media/bgCode.webm" type="video/webm">
 		<source src="media/bgCode.mp4" type="video/mp4">
 	</video>
-	<div class="appWrapper">
+	<div id='removeLoader' class="appWrapper">
 		<div class="mainBackGroundWrapper">
 			<div class="wrapper">
 				<div class="centerTextArea">
@@ -38,14 +36,18 @@
 					<h1 class="centerLevelText">LAUNCH THE APP</h1>
 					<h2 class="lowerLevelText">Доверяйте работу профессионалам. <br> <a href="http://ru.linkedin.com/pub/sergei-melentyev/b6/396/163" target="_empty">Мелентьев Сергей.</a> <a href="http://developer.apple.com/developer-id/" target="_empty">Apple Developer ID 8Z7V232X2F</a></h2>
 				</div>
-		<div id="particles-js"></div>
-
+				<div class="canvas-wrap">
+				    <div id="canvas" class="gradient"></div>
+				</div>
 			</div>
 		</div>
 	</div>
 </div>
 </body>
-	<script src="js/particles.js"></script>
-	<script src="js/app.js"></script>
+	<script src="js/three.min.js"></script>
+	<script src="js/projector.js"></script>
+	<script src="js/canvas-renderer.js"></script>
+	<script src="js/3d-lines-animation.js"></script>
+	<script src="js/color.js"></script>
     <script src="js/main.js"></script>
 </html>
